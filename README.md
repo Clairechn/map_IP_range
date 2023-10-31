@@ -11,10 +11,10 @@
   
 2. 資料比對: 將前年的所有 IP 存為 nested dictionary 後比對
    (1) Nested dictionary 結構
-       以上圖 IP 位址為例，nested dict = {'120.114.240':{'2':2}, '120.114.241':{'255':3}, '140.116.167':{'0':4, '15':5}}\n
-       - key: IP 位址的前 24 個位元\n
-       - value(sub-dict): sub-key 為 IP 起始位址的後 8 個位元，sub-value 為前年檔案的 row index\n
-   (2) 排序 Nested dictionary: 將各 sub-dict 以 sub-key 值由小到大排序\n
-   (3) 比對 IP
-       以當年 IP 位址的前 24 個位元比對 nested dict 的 key，若匹配則再用 IP 起始位址的後 8 個位元比對 value 的 sub-dict
-       找到比 IP 起始位址小的 IP 中，最大的那一筆 IP，並取它的 row index 以找到該筆資料
+       以上圖 IP 位址為例，nested dict = {'120.114.240':{'2':2}, '120.114.241':{'255':3}, '140.116.167':{'0':4, '15':5}}  
+       - key: IP 位址的前 24 個位元  
+       - value(sub-dict): sub-key 為 IP 起始位址的後 8 個位元，sub-value 為前年檔案的 row index  
+   (2) 排序 Nested dictionary: 將各 sub-dict 以 sub-key 值由小到大排序  
+   (3) 比對 IP  
+       以當年 IP 位址的前 24 個位元比對 nested dict 的 key，若匹配則再用 IP 起始位址的後 8 個位元比對 value 的 sub-dict  
+       找到比 IP 起始位址小的 IP 中，最大的那一筆 IP，並取它的 row index 以找到該筆資料  
