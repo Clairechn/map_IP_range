@@ -4,11 +4,10 @@
 工作地點中各單位的 IP 位址範圍每年可能會變動，因此需要將前一年份的 IP 與當年度的 IP 比對，以匹配每個 IP 變動前所屬單位
 
 ### 專案流程
-1. 資料前處理: 將 IP 位址進行資料前處理
-   ![image](https://github.com/Clairechn/map_IP_range/assets/43264051/77007c00-fa80-46c8-b84a-e7ba788ca909)
-   將 IP 位址範圍的格式統一為 'IP 起始位址' 及 'IP 結束位址'
-   ![image](https://github.com/Clairechn/map_IP_range/assets/43264051/f22f176a-33e4-4dfc-bec1-2cae35adf046)
-  
+1. 資料前處理: 將 IP 位址進行資料前處理  
+   ![image](https://github.com/Clairechn/map_IP_range/assets/43264051/77007c00-fa80-46c8-b84a-e7ba788ca909)  
+   將 IP 位址範圍的格式統一為 'IP 起始位址' 及 'IP 結束位址'  
+   ![image](https://github.com/Clairechn/map_IP_range/assets/43264051/f22f176a-33e4-4dfc-bec1-2cae35adf046)  
 2. 資料比對: 將前年的所有 IP 存為 nested dictionary 後比對
    (1) Nested dictionary 結構
        以上圖 IP 位址為例，nested dict = {'120.114.240':{'2':2}, '120.114.241':{'255':3}, '140.116.167':{'0':4, '15':5}}  
